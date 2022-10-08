@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoopGIF</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/patrick.gif" />
+    <script src="js/addGIF.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="flex flex-wrap flex-col justify-center items-center h-screen gap-4"
+      id="biggest-container"
+    >
+      <div class="title">Loop GIFs</div>
+      <div class="flex flex-wrap flex-row justify-center gap-4">
+        <button class="button text-lg" id="button1" onclick="addGIF(1)">
+          Omer
+        </button>
+        <button class="button text-lg" id="button2" onclick="addGIF(2)">
+          Keanu Reeves
+        </button>
+        <button class="button text-lg" id="button3" onclick="addGIF(3)">
+          Patrick
+        </button>
+        <button class="button text-lg" onclick="removeGIF()">Clear</button>
+      </div>
+      <div class="grid-container" id="container"></div>
+    </div>
+  </body>
+</html>
